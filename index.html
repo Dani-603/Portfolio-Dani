@@ -7,11 +7,18 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="animated-bg"></div>
+    <div class="animated-bg">
+        <div class="bubble b1"></div>
+        <div class="bubble b2"></div>
+        <div class="bubble b3"></div>
+        <div class="bubble b4"></div>
+        <div class="bubble b5"></div>
+    </div>
     <div class="contenido-superior">
         <header>
             <nav>
-                <ul>
+                <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+                <ul class="nav-list">
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="pages/sobre-mi.html">Sobre mí</a></li>
                     <li><a href="pages/proyectos.html">Proyectos</a></li>
@@ -23,7 +30,7 @@
         </header>
 
         <main>
-            <section id="presentacion">
+            <section id="presentacion" style="margin-top: 40px;">
                 <h3>¡Bienvenido a mi portafolio!</h3>
                 <p>
                     "Como el color y la luz en movimiento, el diseño transforma cada fondo en una experiencia única."
@@ -33,7 +40,7 @@
             <section id="servicios">
                 <h4>Servicios</h4>
                 <ul>
-                    <li>Identidad visual y branding</li>
+                    <li>Identidad de marca y branding</li>
                     <li>Diseño de logotipos</li>
                     <li>Diseño editorial</li>
                     <li>Ilustración digital</li>
@@ -46,5 +53,20 @@
             <p>&copy; 2025 Daniel de Medero. Todos los derechos reservados.</p>
         </footer>
     </div>
+    <script>
+    // Menú hamburguesa para móviles
+    const toggle = document.querySelector('.menu-toggle');
+    const navList = document.querySelector('.nav-list');
+    toggle.addEventListener('click', () => {
+        navList.classList.toggle('open');
+        toggle.classList.toggle('open');
+    });
+    document.querySelectorAll('.nav-list a').forEach(link => {
+        link.addEventListener('click', () => {
+            navList.classList.remove('open');
+            toggle.classList.remove('open');
+        });
+    });
+    </script>
 </body>
 </html>
