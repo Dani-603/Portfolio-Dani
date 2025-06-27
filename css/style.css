@@ -263,10 +263,8 @@ footer {
     object-fit: cover;
     filter: brightness(0.7) blur(0.5px);
     display: block;
-    background: #111;
 }
 
-/* Elimina cualquier display:none en móvil y asegura fondo oscuro si el video no carga */
 @media (max-width: 700px), (pointer: coarse) {
     .video-background {
         display: block !important;
@@ -274,7 +272,6 @@ footer {
         width: 100vw;
         height: 100vh;
         z-index: 0;
-        background: #111;
     }
     .video-background video {
         min-width: 100vw;
@@ -283,8 +280,7 @@ footer {
         height: 100vh;
         object-fit: cover;
         filter: brightness(0.7);
-        display: block !important;
-        background: #111;
+        display: block;
     }
 }
 
