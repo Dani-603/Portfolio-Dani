@@ -46,11 +46,11 @@ nav ul li a:focus {
 
 h1 {
     margin: 10px 0 0 0;
-    font-size: 2.8em;
+    font-size: 2.0em;
     letter-spacing: 2px;
-    font-family: 'Segoe UI', Arial, sans-serif;
+    font-family: 'lato', sans-serif;
     font-weight: 700;
-    color: #111;
+    color: #ffffff;
     text-align: left;
     padding-left: 40px;
 }
