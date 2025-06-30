@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Daniel | Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="animated-bg">
+        <div class="bubble b1"></div>
+        <div class="bubble b2"></div>
+        <div class="bubble b3"></div>
+        <div class="bubble b4"></div>
+        <div class="bubble b5"></div>
+    </div>
+    <div class="contenido-superior">
+        <header>
+            <nav>
+                <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+                <ul class="nav-list">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="sobre-mi.html">Sobre mí</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <h1>Daniel</h1>
+            <h2>Diseñador Gráfico</h2>
+        </header>
+        <main>
+            <section id="contacto" style="margin-top:80px; background:rgba(255,255,255,0.96); border-radius:24px; max-width:500px; margin-left:auto; margin-right:auto; padding:48px 28px;">
+                <h3 class="titulo-categorias" style="margin-bottom:24px;">Contacto</h3>
+                <div style="margin-top:12px; color:#232946; display:flex; flex-direction:column; align-items:center; gap:10px;">
+                    <div style="display:flex; align-items:center; gap:10px;">
+                        <strong style="min-width:80px; text-align:right;">Email:</strong>
+                        <span>danieldemedero605@gmail.com</span>
+                    </div>
+                    <div style="display:flex; align-items:center; gap:10px;">
+                        <strong style="min-width:80px; text-align:right;">Whatsapp:</strong>
+                        <span>092150185</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 Daniel de Medero. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+    <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navList = document.querySelector('.nav-list');
+    toggle.addEventListener('click', () => {
+        navList.classList.toggle('open');
+        toggle.classList.toggle('open');
+    });
+    document.querySelectorAll('.nav-list a').forEach(link => {
+        link.addEventListener('click', () => {
+            navList.classList.remove('open');
+            toggle.classList.remove('open');
+        });
+    });
+    </script>
+</body>
+</html>
+</html>
