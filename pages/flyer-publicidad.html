@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flyers Deportivos - Daniel | Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+</head>
+<body>
+    <div class="animated-bg">
+        <div class="bubble b1"></div>
+        <div class="bubble b2"></div>
+        <div class="bubble b3"></div>
+        <div class="bubble b4"></div>
+        <div class="bubble b5"></div>
+    </div>
+    <div class="contenido-superior">
+        <header>
+            <nav>
+                <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+                <ul class="nav-list">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="sobre-mi.html">Sobre mí</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <h1>Daniel</h1>
+            <h2>Diseñador Gráfico</h2>
+        </header>
+        <main>
+            <section id="flyer" style="margin-top:100px; background:rgba(255,255,255,0.97); border-radius:32px; max-width:1200px; margin-left:auto; margin-right:auto; padding:56px 24px;">
+                <h3 class="titulo-categorias" style="margin-bottom:18px;">Publicidad</h3>
+                <p style="text-align:center; color:#232946; font-size:1.18em; margin-bottom:38px;">
+                    Galería de flyers realizados para distintos productos,marcas y eventos. Cada diseño busca transmitir energía, movimiento y captar la atención con colores vibrantes y composiciones dinámicas.
+                </p>
+                <div class="flyer-grid">
+
+                    <div class="flyer-card">
+                        <img class="flyer-img" src="../Images/Porsche.jpg" alt="Flyer Torneo de Fútbol">
+                        <h4> Porshe</h4>
+                        <p>Automovilismo</p>
+                    </div>
+                    <div class="flyer-card">
+                        <img class="flyer-img" src="../Images/Lambo.png" alt="Flyer Torneo de Fútbol">
+                        <h4> Lamborghini</h4>
+                        <p>Automovilismo</p>
+                    </div>
+                    <div class="flyer-card">
+                        <img class="flyer-img" src="../Images/Vespa.png" alt="Flyer Maratón">
+                        <h4>Vespa</h4>
+                        <p>Moto</p>
+                    </div>
+                    
+
+                     
+                   
+                    
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 Daniel de Medero. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+    <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navList = document.querySelector('.nav-list');
+    toggle.addEventListener('click', () => {
+        navList.classList.toggle('open');
+        toggle.classList.toggle('open');
+    });
+    document.querySelectorAll('.nav-list a').forEach(link => {
+        link.addEventListener('click', () => {
+            navList.classList.remove('open');
+            toggle.classList.remove('open');
+        });
+    });
+    </script>
+</body>
+</html>
