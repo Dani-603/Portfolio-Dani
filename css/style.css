@@ -551,3 +551,23 @@ header, main, footer, section {
         font-size: 1.1em;
     }
 }
+
+.categorias-proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-items: center;
+    align-items: stretch;
+}
+
+.portada-horizontal {
+    width: 100%;
+    max-width: 320px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 12px #0074d944;
+    border: 2px solid #ffb347;
+    background: #fff;
+}
